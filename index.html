@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>caleb</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Stylesheet for hamburger navbar icon for mobile users -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <h1>Caleb Bonfield</h1>
+    <article>
+        <nav class="navbar" id="responsiveNav">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h2>Header</h2>
+        </header>
+
+        <main>
+           <h2>Content</h2> 
+        </main>
+        
+        <section id="signup">
+            <h2>Sign Up</h2>
+        </section>
+        <section id="feature1" class="feature">
+            <h2>Feature 1</h2>  
+        </section>
+        <section id="feature2" class="feature">
+            <h2>Feature 2</h2>
+        </section>
+        <section id="feature3" class="feature">
+            <h2>Feature 3</h2>
+        </section>
+
+    </article>
+
+
+    <script>
+        function openNav() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+    </script>
 
 </body>
 </html>
