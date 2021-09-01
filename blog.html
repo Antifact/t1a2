@@ -12,54 +12,92 @@
 </head>
 <body>
     
-    <!-- Navbar -->
-        <nav class="navbar" id="responsiveNav">
-            <ul>
-                <li><a href="#" class="active">BLOG</a></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
-            </ul>
-        </nav>
+<!-- Navbar -->
+    <nav class="navbar" id="responsiveNav">
+        <ul>
+            <li><a href="#" class="active">BLOG</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
 
-        <!-- Main Body Content -->
-
-        <article>
-
-            <header>
-                <h1>Caleb Bonfield</h1>
-            </header>
-
-            <div class="profile">
-            <img src="./img/caleb-profile1.jpg" alt="photo of me"/>
-            </div>
-
-            <main>
-            <h2>brisbane based web dev</h2>
-
-            <p>Hi, I'm Caleb &#128512;</p>
-
-            <p>I'm a web developer studying at CoderAcademy.</p>
-
-            <p>Learn more about me <a href="about.html">here</a>!</p>
-
-            <!-- <h2>Links</h2> -->
-            </br>
-            <ul>
-                <li><a href="https://github.com/Antifact/">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/caleb-bonfield-b74035162/">LinkedIn</a></li>
-            </ul>
-
-            </main>
-
-            <footer>
-                <p>&copy; caleb. 2021.</p> 
-            </footer>
-
-        </article>
+    <!-- Main Body Content -->
+    <div class="wrapper">
+        <header>
+            <h1>Blog</h1>
+        </header>
 
 
+        <!-- Component? of blog posts -->
+        <main class="blogPosts">
+            
+            <article class="post5" id="post">
+                <h2>Running out of title ideas</h2>
+                <h4>01:33am - 02/09/2021</h4>
+                <img src="https://via.placeholder.com/150x150" alt="placholder image"/>
+                <p>
+                    Will this do? Who knows.
+                </p>
+            </article>
+
+
+            <article class="post4" id="post">
+                <h2>Hello?</h2>
+                <h4>01:33am - 02/09/2021</h4>
+                <img src="https://via.placeholder.com/150x150" alt="placholder image"/>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laborum inventore 
+                    exercitationem alias debitis! Qui praesentium est veniam aspernatur quisquam quam natus, 
+                    repellendus recusandae? Debitis, modi explicabo, illo accusantium sit minus hic, quos exercitationem 
+                    eveniet dicta voluptas error nihil doloribus?
+                </p>
+            </article>
+
+            <article class="post3" id="post">
+                <h2>HEY</h2>
+                <h4>12:58am - 01/09/2021</h4>
+                <img src="https://via.placeholder.com/150x150" alt="placholder image"/>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laborum inventore 
+                    exercitationem alias debitis! Qui praesentium est veniam aspernatur quisquam quam natus, 
+                    repellendus recusandae? Debitis, modi explicabo, illo accusantium sit minus hic, quos exercitationem 
+                    eveniet dicta voluptas error nihil doloribus?
+                </p>
+            </article>
+
+            <article class="post2" id="post">
+                <h2>Hi Again!</h2>
+                <h4>12:57am - 01/09/2021</h4>
+                <img src="https://via.placeholder.com/150x150" alt="placholder image"/>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laborum inventore 
+                    exercitationem alias debitis! Qui praesentium est veniam aspernatur quisquam quam natus, 
+                    repellendus recusandae? Debitis, modi explicabo, illo accusantium sit minus hic, quos exercitationem 
+                    eveniet dicta voluptas error nihil doloribus?
+                </p>
+            </article>
+
+            <article class="post1" id="post">
+                <h2>Hello World!</h2>
+                <h4>12:44am - 01/09/2021</h4>
+                <img src="https://via.placeholder.com/150x150" alt="placholder image"/>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laborum inventore 
+                    exercitationem alias debitis! Qui praesentium est veniam aspernatur quisquam quam natus, 
+                    repellendus recusandae? Debitis, modi explicabo, illo accusantium sit minus hic, quos exercitationem 
+                    eveniet dicta voluptas error nihil doloribus?
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>&copy; caleb. 2021.</p> 
+        </footer>
+
+    </div>
 
     <!-- Functionality for the hamburger icon to expand the navigation menu for mobile users. -->
     <script>

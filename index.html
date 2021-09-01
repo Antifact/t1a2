@@ -12,50 +12,47 @@
 </head>
 <body>
 
-        <nav class="navbar" id="responsiveNav">
+<!-- Navbar -->
+    <nav class="navbar" id="responsiveNav">
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <!-- Main Body Content -->
+        <article class="homepage">
+            <header>
+                <h1>Caleb Bonfield</h1>
+            </header>
+
+            <div class="profile">
+                <img src="./img/caleb-profile1.jpg" alt="photo of me"/>
+            </div>
+        </article>
+
+        <main class="homeContent">
+            <h2>brisbane based web dev</h2>
+            <p>Hi, I'm Caleb &#128512;</p>
+            <p>I'm a web developer studying at CoderAcademy.</p>
+            <p>Learn more about me <a href="about.html">here</a>!</p>
+
+            <!-- <h2>Links</h2> -->
             <ul>
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
+                <li><a href="https://github.com/Antifact/">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/caleb-bonfield-b74035162/">LinkedIn</a></li>
+                <li><a href="cv.pdf">Curriculum Vitae</a></li>
             </ul>
-        </nav>
 
-        <article>
-
-        <header>
-            <h1>Caleb Bonfield</h1>
-        </header>
-
-        <div class="profile">
-        <img src="./img/caleb-profile1.jpg" alt="photo of me"/>
-        </div>
-
-        <main>
-           <h2>brisbane based web dev</h2>
-
-           <p>Hi, I'm Caleb &#128512;</p>
-
-           <p>I'm a web developer studying at CoderAcademy.</p>
-
-           <p>Learn more about me <a href="about.html">here</a>!</p>
-
-           <!-- <h2>Links</h2> -->
-           </br>
-           <ul>
-               <li><a href="https://github.com/Antifact/">GitHub</a></li>
-               <li><a href="https://www.linkedin.com/in/caleb-bonfield-b74035162/">LinkedIn</a></li>
-           </ul>
-
+            <footer>
+                <p>&copy; caleb. 2021.</p> 
+            </footer>
         </main>
-
-        <footer>
-            <p>&copy; caleb. 2021.</p> 
-        </footer>
-    </article>
-
-
+    </div>
 
     <!-- Functionality for the hamburger icon to expand the navigation menu for mobile users. -->
     <script>
