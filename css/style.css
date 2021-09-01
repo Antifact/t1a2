@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Lato', Arial, Helvetica, sans-serif
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height:100%;
+    width:100%;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    background-color: #fffaf0;
+    color: #313A3D;
 }
+
+/*  
+    Styling for mobile navigation bar. The following styling 
+    displays a hamburger icon for accessibility for mobile users.
+    If the display is wider than 480px, it will remove the hamburger
+    and display a regular navigation bar.
+
+    The majority of the styling was authored by W3Schools.com
+    Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+*/
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #2D3142;
 }
 
 .navbar ul {
@@ -22,15 +44,14 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px
-}
-
-.navbar a:hover {
-    color: red;
+    font-size: 17px;
+    font-family: 'Fugaz One', Arial, Helvetica, sans-serif;
 }
 
 .navbar a.active {
-    color: orange;
+    /* color: #dddafa; */
+    /* color: #f694c1; */
+    color: #a9def9;
 }
 
 .navbar li:not(:first-child) {
@@ -42,23 +63,34 @@ body {
     display: block;
 }
 
-.navbar.responsive {
+.navbar.mobile {
     position: relative;
 }
 
-.navbar.responsive .icon {
+.navbar.mobile .icon {
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.navbar.responsive a {
+.navbar.mobile a, .navbar.mobile li {
     float: none;
     display: block;
     text-align: left;
 }
 
+/* Media query for screens that are larger than mobile, make the background disappear */
+
 @media only screen and (min-width: 481px) {
+
+    .navbar {
+        background: none;
+    }
+
+    .navbar a {
+        color: #313A3D
+    }
+    
     .navbar .icon {
         display: none;
     }
@@ -68,16 +100,93 @@ body {
     }
 }
 
+article {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    max-width: 650px;
+}
+
+
+header {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #2D3142;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: calc(50% - 100px);
+    border: solid 2px black;
+}
+
+.profile > img {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    top: -45px;
+}
+
+main h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2D3142;
+    display: flex;
+    justify-content: center;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+
+main li {
+    display: inline;
+    padding: 0 10px;
+}
+
+main li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #F694C1;
+}
+
+
+footer {
+    font-size: .8rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2D3142;
+    color: white;
+    text-align: center;
+}
+
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 960px) {
-    body {
-        background-color: blue;
-    }
+
 }
 
 /* Desktop */
 @media only screen and (min-width: 961px) {
-    body {
-        background-color: red;
+
+
+    .navbar a:hover {
+        color: #E4C1F9;
     }
 }

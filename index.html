@@ -12,7 +12,6 @@
 </head>
 <body>
 
-    <article>
         <nav class="navbar" id="responsiveNav">
             <ul>
                 <li><a href="#" class="active">HOME</a></li>
@@ -23,35 +22,48 @@
             </ul>
         </nav>
 
+        <article>
+
         <header>
-            <h2>Header</h2>
+            <h1>Caleb Bonfield</h1>
         </header>
 
+        <div class="profile">
+        <img src="./img/caleb-profile1.jpg" alt="photo of me"/>
+        </div>
+
         <main>
-           <h2>Content</h2> 
+           <h2>brisbane based web dev</h2>
+
+           <p>Hi, I'm Caleb &#128512;</p>
+
+           <p>I'm a web developer studying at CoderAcademy.</p>
+
+           <p>Learn more about me <a href="about.html">here</a>!</p>
+
+           <h2>Links</h2>
+           <ul>
+               <li><a href="https://github.com/Antifact/">GitHub</a></li>
+               <li><a href="https://www.linkedin.com/in/caleb-bonfield-b74035162/">LinkedIn</a></li>
+           </ul>
+
         </main>
         
-        <section id="signup">
-            <h2>Sign Up</h2>
-        </section>
-        <section id="feature1" class="feature">
-            <h2>Feature 1</h2>  
-        </section>
-        <section id="feature2" class="feature">
-            <h2>Feature 2</h2>
-        </section>
-        <section id="feature3" class="feature">
-            <h2>Feature 3</h2>
-        </section>
+        
+        <footer>
+            <p>&copy; caleb. 2021.</p> 
+        </footer>
 
     </article>
 
 
+
+    <!-- Functionality for the hamburger icon to expand the navigation menu for mobile users. -->
     <script>
         function openNav() {
             var x = document.getElementById("responsiveNav");
             if (x.className === "navbar") {
-                x.className += " responsive";
+                x.className += " mobile";
                 } else {
                     x.className = "navbar";
                 }
