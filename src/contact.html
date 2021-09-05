@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Stylesheet for hamburger navbar icon for mobile users -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<!-- Navbar -->
+    <nav class="navbar" id="responsiveNav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="#" class="active">CONTACT</a></li>
+            <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <!-- Main Body Content -->
+        <main class="contact">
+            <header>
+                <h1>Contact</h1>
+            </header>
+
+            <p style="text-align: center; padding: 20px;">I prefer to be reached by email at <a href="mailto:caleb@hicaleb.com">caleb@hicaleb.com</a>. 
+                Please free to use the form below.</p>
+
+            <div class="contactContainer">
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe">
+                
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="jdoe@email.com">
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Email away :-)" style="height:150px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; caleb. 2021.</p> 
+            </footer>
+        </main>
+    </div>
+
+    <!-- Functionality for the hamburger icon to expand the navigation menu for mobile users. -->
+    <script>
+        function openNav() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "navbar") {
+                x.className += " mobile";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+    </script>
+
+</body>
+</html>
+
+

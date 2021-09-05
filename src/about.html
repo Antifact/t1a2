@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Stylesheet for hamburger navbar icon for mobile users -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<!-- Navbar -->
+    <nav class="navbar" id="responsiveNav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" class="active">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="javascript:void(0)" class="icon" onClick="openNav()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <!-- Main Body Content -->
+        <main class="about">
+            <header>
+                <h1>About Me</h1>
+            </header>
+
+            <div class="profile">
+                <img src="./img/caleb-profile1.jpg" alt="photo of me"/>
+            </div>
+
+            <article class="aboutContent">
+                <h4>Hi, I'm Caleb! I'm an apsiring web developer currently studying at CoderAcademy!</h4>
+                <p>
+                    I've recently turned 23, and I have been infatuated with web development since I was in year 9, being roughly 15-16, 
+                    but didn't have the opportunity in school to learn without the need for self-teaching. Which is why I'm at CoderAcademy 
+                    so I can become properly qualified and confident in my technical ability. I hold a Diploma of Information Technology Networking, 
+                    provided by TAFE Brisbane, which I graduated in 2018. However, web development is still my number one and no longer 
+                    have the interest to persue this avenue of IT.
+                </p>
+                <p>
+                    I'm an Assistant Manager at Domino's and have been for almost 4 years. It has been an incredible learning experience during
+                    my time here, but I'm eager to move on and start a career in doing what I love and have always come back to. The skills I've learned
+                    while being in my position would be highly beneficial to transfer over to my career. I have an excellent sense of 
+                    brand empathy, have learned to work under pressure while managing my team for fast and effecient customer service, and providing
+                    excellent customer service.
+                </p>
+
+                <ul>
+                    <li><a href="https://github.com/Antifact/">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/caleb-bonfield-b74035162/">LinkedIn</a></li>
+                    <li><a href="cv.pdf">Curriculum Vitae</a></li>
+                </ul>
+            </article>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; caleb. 2021.</p> 
+            </footer>
+        </main>
+    </div>
+
+    <!-- Functionality for the hamburger icon to expand the navigation menu for mobile users. -->
+    <script>
+        function openNav() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "navbar") {
+                x.className += " mobile";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+    </script>
+
+</body>
+</html>
+
+
